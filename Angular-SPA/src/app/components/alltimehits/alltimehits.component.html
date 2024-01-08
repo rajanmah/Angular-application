@@ -1,0 +1,16 @@
+<p>alltimehits works!</p>
+<div *ngFor="let p of allTimeHits">
+  
+    <div class="cards fsFlexStart" style="display:fsFlexStart;">
+        <img class="cards__img" [src]="p.Poster" />
+        <div class="cards__overlay">
+            <div class="card__title">{{p.Title}}</div>
+            <div class="card__runtime">
+                {{p.Released}}
+            </div>
+            <div class="card__description">{{p.Plot}}</div>
+            <!-- <img class="cards__img2" [src]="p.Images[1]" /> -->
+        </div>
+    </div>
+</div>
+

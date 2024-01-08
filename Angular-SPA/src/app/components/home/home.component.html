@@ -1,2 +1,37 @@
-<p>home works!</p>
-<img src="https://images.pexels.com/photos/19371085/pexels-photo-19371085/free-photo-of-streetwear-ec.jpeg?auto=compress&cs=tinysrgb&w=400">
+@if (images) {
+    <div *ngFor="let p of images">
+	<ngb-carousel>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="p.Images[0]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>{{p.Title}} ({{p.Year}})</h3>
+                <h5><strong>Actors: </strong>{{p.Actors}}</h5>
+				<h6><strong>Plot: </strong>{{p.Plot}}</h6>
+			</div>
+		</ng-template>
+        <ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="p.Images[1]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>{{p.Title}} ({{p.Year}})</h3>
+                <h5><strong>Actors: </strong>{{p.Actors}}</h5>
+				<h6><strong>Plot: </strong>{{p.Plot}}</h6>
+			</div>
+		</ng-template>
+        <ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="p.Images[2]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>{{p.Title}} ({{p.Year}})</h3>
+                <h5><strong>Actors: </strong>{{p.Actors}}</h5>
+				<h6><strong>Plot: </strong>{{p.Plot}}</h6>
+			</div>
+		</ng-template>
+		
+	</ngb-carousel>
+</div>
+}

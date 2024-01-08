@@ -1,0 +1,28 @@
+h3{
+    text-align: center;
+    color: Black;
+}
+img{
+    width: 97%;
+    height: auto
+}
+.picsum-img-wrapper img{
+    margin: 20px;
+    border-radius: 10px;
+   
+}
+
+.carousel-caption{
+    background-color: white;
+    opacity: 0;
+    width: auto;
+    color: black;
+    border-radius: 10px;
+   margin-right:70px;
+   margin-bottom: 20px
+  
+}
+
+.carousel-caption:hover{
+    opacity:.6
+}
