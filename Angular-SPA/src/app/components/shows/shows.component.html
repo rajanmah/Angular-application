@@ -1,8 +1,3 @@
-<!-- <div *ngFor="let p of tvShows">
- 
-    </div>
-</div> -->
-
 
 <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
     <div *ngFor="let p of tvShows">
@@ -12,7 +7,7 @@
                 <div class="cards__overlay">
                     <div class="card__title">{{p?p.Title:''}}</div>
                     <div class="card__runtime">
-                       <span>Released Date: </span> {{p?p.Released:''}}
+                       <span>Release Date: </span> {{p?p.Released:''}}
                     </div>
                     <div class="card__description">{{p?p.Plot:''}}</div>
                 </div>

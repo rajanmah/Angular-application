@@ -1,7 +1,7 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { Router,RouterLink, RouterLinkActive,RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { repeat } from 'rxjs';
 
@@ -10,16 +10,16 @@ import { repeat } from 'rxjs';
   selector: 'app-home',
   standalone: true,
   imports: [
-  NgbCarouselModule,
-  FlexLayoutModule,
-NgIf,
-  NgFor,
-  NgbModule
-  
-],
+    NgbCarouselModule,
+    FlexLayoutModule,
+    NgIf,
+    NgFor,
+    NgbModule
+
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
-  
+
 })
 export class HomeComponent {
   images = [
@@ -128,7 +128,7 @@ export class HomeComponent {
       "imdbID": "tt0848228",
       "Type": "movie",
       "Response": "True",
-       "Images": [
+      "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MzEzMjcyM15BMl5BanBnXkFtZTcwNDM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwMzM2MTg1M15BMl5BanBnXkFtZTcwNjM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -306,7 +306,7 @@ export class HomeComponent {
       "Type": "series",
       "totalSeasons": "3",
       "Response": "True",
-       "Images": [
+      "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2ODg0MzMzM15BMl5BanBnXkFtZTgwODYxODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMjA0MzczNV5BMl5BanBnXkFtZTgwNTIyODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk0MTI0NzQ2NV5BMl5BanBnXkFtZTgwMDkxODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
@@ -336,7 +336,7 @@ export class HomeComponent {
       "Type": "series",
       "totalSeasons": "2",
       "Response": "True",
-       "Images": [
+      "Images": [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2MDMzMTc0MF5BMl5BanBnXkFtZTgwMTAyMzA1OTE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMDkyOTEyNV5BMl5BanBnXkFtZTgwNjY3Mjc3OTE@._V1_SY1000_SX1500_AL_.jpg",
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2NDUwMTU2NV5BMl5BanBnXkFtZTgwNTI1Mzc3OTE@._V1_SY1000_CR0,0,1499,1000_AL_.jpg",
@@ -494,12 +494,12 @@ export class HomeComponent {
     }
   ]
   constructor(config: NgbCarouselConfig) {
-		// customize default values of carousels used by this component tree
-		config.interval = 6000;
-		config.wrap = true;
-		config.keyboard = false;
-		config.pauseOnHover = false;
-  
-	}
+    // customize default values of carousels used by this component tree
+    config.interval = 6000;
+    config.wrap = true;
+    config.keyboard = false;
+    config.pauseOnHover = false;
 
   }
+
+}

@@ -1,28 +1,25 @@
-h3{
+h3 {
     text-align: center;
     color: Black;
 }
-img{
+
+img {
     width: 97%;
     height: auto
 }
-.picsum-img-wrapper img{
+
+.picsum-img-wrapper img {
     margin: 20px;
     border-radius: 10px;
-   
+
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: white;
     opacity: 0.6;
     width: auto;
     color: black;
     border-radius: 10px;
-   margin-right:70px;
-   margin-bottom: 20px
-  
+    margin-right: 70px;
+    margin-bottom: 20px
 }
-
-/* .carousel-caption:hover{
-    opacity:.6
-} */

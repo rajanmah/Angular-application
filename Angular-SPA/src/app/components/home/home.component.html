@@ -1,4 +1,5 @@
-	<div *ngIf="images.length>0 ">
+<div *ngIf="images.length>0 ">
+
 	<div *ngFor="let p of images">
 		<ngb-carousel>
 			<ng-template ngbSlide>
@@ -34,8 +35,8 @@
 
 		</ngb-carousel>
 	</div>
-
 </div>
-	<div *ngIf="images.length === 0">
-		<h1>Loading carousel images...</h1>
-	  </div>
+
+<div *ngIf="images.length === 0">
+	<h1>Loading carousel images...</h1>
+</div>

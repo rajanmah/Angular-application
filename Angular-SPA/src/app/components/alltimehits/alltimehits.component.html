@@ -1,18 +1,17 @@
 <h3>{{heading}}</h3>
 
 <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
-<div *ngFor="let p of allTimeHits">
-      <div class="cards fsFlexStart" style="display:fsFlexStart;">
-        <img class="cards__img" [src]="p.Poster" />
-        <div class="cards__overlay">
-            <div class="card__title">{{p.Title}}</div>
-            <div class="card__runtime">
-                {{p.Released}}
+    <div *ngFor="let p of allTimeHits">
+        <div class="cards fsFlexStart" style="display:fsFlexStart;">
+            <img class="cards__img" [src]="p.Poster" />
+            <div class="cards__overlay">
+                <div class="card__title">{{p.Title}}</div>
+                <div class="card__runtime">
+                    <span>Release Date: </span>{{p.Released}}
+                </div>
+                <div class="card__description">{{p.Plot}}</div>
             </div>
-            <div class="card__description">{{p.Plot}}</div>
-            <!-- <img class="cards__img2" [src]="p.Images[1]" /> -->
         </div>
     </div>
-</div>
 
-<!-- Data from https://gist.github.com/Urdzik/de477f8e3d7baf4366c9d797cfe63531 -->
+    <!-- Data from https://gist.github.com/Urdzik/de477f8e3d7baf4366c9d797cfe63531 -->

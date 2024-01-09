@@ -6,6 +6,9 @@ I developed simple Angular website using some free movie data. I used the data t
 5. Data Iteration
 6. Angular Carousel
 7. Angular Flex Layout
+8. Angular Router
+
+I created 4 pages including Home, Pupular, All time hits and contact form.
  
 I found the warning which says:
 Warning: Flex Layout loaded on the server without FlexLayoutServerModule.
