@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-shows',
   standalone: true,
   imports: [
-    NgFor
+    NgFor,
+    FlexLayoutModule
   ],
   templateUrl: './shows.component.html',
   styleUrl: './shows.component.css'

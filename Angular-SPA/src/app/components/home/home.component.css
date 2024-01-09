@@ -14,7 +14,7 @@ img{
 
 .carousel-caption{
     background-color: white;
-    opacity: 0;
+    opacity: 0.6;
     width: auto;
     color: black;
     border-radius: 10px;
@@ -23,6 +23,6 @@ img{
   
 }
 
-.carousel-caption:hover{
+/* .carousel-caption:hover{
     opacity:.6
-}
+} */

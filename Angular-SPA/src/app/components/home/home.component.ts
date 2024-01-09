@@ -1,5 +1,6 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { Router,RouterLink, RouterLinkActive,RouterOutlet } from '@angular/router';
 import { NgbCarouselConfig, NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { repeat } from 'rxjs';
@@ -10,7 +11,8 @@ import { repeat } from 'rxjs';
   standalone: true,
   imports: [
   NgbCarouselModule,
-
+  FlexLayoutModule,
+NgIf,
   NgFor,
   NgbModule
   

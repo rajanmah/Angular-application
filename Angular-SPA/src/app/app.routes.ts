@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
 import { PopularComponent } from './components/popular/popular.component';
-import { TrendingComponent } from './components/trending/trending.component';
-import { UpcomingComponent } from './components/upcoming/upcoming.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { AlltimehitsComponent } from './components/alltimehits/alltimehits.component';
 
 export const routes: Routes = [
     {
@@ -15,14 +14,10 @@ export const routes: Routes = [
         path: 'popular'
     },
     {
-        component:TrendingComponent,
-        path:'trending'
+        component:AlltimehitsComponent,
+        path:'alltimehits'
     },
-    {
-        component:UpcomingComponent,
-        path:'upcoming'
-    },
-    {
+      {
         component:ContactComponent,
         path:'contact'
     },

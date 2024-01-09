@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   styleUrl: './alltimehits.component.css'
 })
 export class AlltimehitsComponent {
+  heading ="All Time Hits"
 allTimeHits =  [
   {
     "Title": "They Shall Not Grow Old",

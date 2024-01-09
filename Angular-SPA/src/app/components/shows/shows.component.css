@@ -1,11 +1,18 @@
+
+.container {
+    display: flex;
+    /* border: 10px red solid; */
+  
+}
+
 .cards {
-    display: inline-block;
+    border: 10px greenyellow solid;
     transition: transform .2s;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     margin: 20px;
-    margin-left:40px;
+    margin-left: 30px;
     cursor:pointer;
     min-width:200px;
     height:300px;
@@ -15,11 +22,12 @@
 }
 
 .cards:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .cards__img {
     height: 300px;
+    min-width:200px;
 }
 
 .cards__overlay {
@@ -45,6 +53,7 @@
     font-weight: 900;
     font-size: 1rem;
     margin-bottom: 0.4rem;
+  
 }
 
 .card__description {
